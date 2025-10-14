@@ -1,0 +1,9 @@
+.explore-div{
+
+   border-radius: 10px;
+   cursor: pointer;
+}
+.explore-div:hover{
+
+   background-color: #E5E7EA;
+}

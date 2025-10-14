@@ -1,0 +1,143 @@
+/* Navbar.css */
+#nav-col-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav-col-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-col-2>i {
+    font-size: 25px;
+}
+
+#nav-col-3>i {
+    font-size: 25px;
+}
+
+#nav-col-3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav {
+    box-shadow: 0px 0.1px 5px rgb(196, 195, 195);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 102vw;
+    background: white;
+    z-index: 1;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+i {
+    color: #606366;
+}
+
+#nav-search {
+    background-color: #F0F2F5;
+}
+
+#nav-search:focus {
+    border: none;
+    outline: none;
+}
+
+#fb-logo {
+    background-color: #0866FF;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#nav-img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border: 1px solid #606366;
+    border-radius: 50%;
+}
+
+.nav-right {
+    color: black;
+    background-color: #D6D9DD;
+    padding: 10px;
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    #nav-col-2 i {
+        font-size: 20px;
+    }
+    
+    .nav-right, #nav-img, #fb-logo {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    #nav-col-2 {
+        justify-content: space-around;
+    }
+    
+    #nav-search {
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav-col-2 i {
+        font-size: 18px;
+    }
+    
+    #nav-search {
+        display: none;
+    }
+    
+    #fb-logo {
+        margin-right: 5px;
+    }
+    
+    .nav-right {
+        margin-left: 5px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #nav-col-2 {
+        display: none;
+    }
+    
+    #nav-col-1, #nav-col-3 {
+        justify-content: space-between;
+    }
+    
+    #nav-col-1 {
+        padding-left: 10px;
+    }
+    
+    #nav-col-3 {
+        padding-right: 10px;
+    }
+}

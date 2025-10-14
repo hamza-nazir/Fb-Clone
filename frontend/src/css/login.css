@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  #left-login-container {
+    display: none; /* hide left container */
+  }
+  #right-login-container {
+    width: 100%; /* take full width */
+  }
+}
